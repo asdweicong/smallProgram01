@@ -1,4 +1,5 @@
 <!--pages/tab/tab.wxml-->
+<button  bindtap="scanCode">调用二维码</button>
 <button  bindtap="bindViewTapShujubangding">数据绑定</button>
 <button  bindtap="bindViewTapLiebiexuanran">列表渲染</button>
 <button  bindtap="bindViewTapCondition">条件渲染</button>
@@ -7,4 +8,5 @@
 <button  bindtap="bindViewImportOrInclude">引用</button>
 <button  bindtap="bindViewWxhtml">wxhtml</button>
 <button  bindtap="bindViewWxs">wxs</button>
+<button  bindtap="bindViewWxsModule">WXS 模块</button>
 <button  bindtap="bindViewWxsModule">WXS 模块</button>

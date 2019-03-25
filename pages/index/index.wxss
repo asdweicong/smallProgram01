@@ -19,3 +19,4 @@
 .usermotto {
   margin-top: 100px;
 }
+/* @import url('./index.css') */

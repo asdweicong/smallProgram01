@@ -28,6 +28,7 @@ Page({
     for (let i = 0; i < length; ++i) {
       const x = Math.floor(Math.random() * length)
       const y = Math.floor(Math.random() * length)
+      console.log("switch",x ,y)
       const temp = this.data.objectArray[x]
       this.data.objectArray[x] = this.data.objectArray[y]
       this.data.objectArray[y] = temp
@@ -38,7 +39,8 @@ Page({
   },
   addToFront(e) {
     const length = this.data.objectArray.length
-    this.data.objectArray = [{ id: length, unique: 'unique_' + length }].concat(this.data.objectArray)
+    this.data.objectArray = [{ id: length + 1, unique: 'unique_' + length+ 1 }].concat(this.data.objectArray)
+    // this.data.objectArray = this.data.objectArray.concat([{ id: length + 1, unique: 'unique_' + length + 1 }])
     this.setData({
       objectArray: this.data.objectArray
     })

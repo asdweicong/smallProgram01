@@ -1,0 +1,5 @@
+var demo = require("./demo.wxs");
+
+console.log(demo.FOO);
+console.log(demo.bar("demo.wxs"));
+console.log(demo.msg);

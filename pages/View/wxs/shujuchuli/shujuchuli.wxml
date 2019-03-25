@@ -1,0 +1,20 @@
+<!--pages/View/wxs/shujuchuli/shujuchuli.wxml-->
+<wxs module="m1">
+ var getMax = function(array){
+    var max = underdined;
+    for(var i=0;i<array.length;++i){
+      if(max ===underdined){
+        max = array[i]
+      }else if(max <=array[i]){
+        max = array[i]
+      }
+    }
+    return max;
+ }
+ module.exports.getMax = getMax
+</wxs>
+<view wx:for="{{array}}">{{item}}</view>
+<view>过滤之后</view>
+<!-- <view>{{m1.getMax}}</view> -->
+<view>{{m1.getMax(array)}}</view>
+

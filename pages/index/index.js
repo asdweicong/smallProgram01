@@ -2,7 +2,8 @@
 //获取应用实例
 const app = getApp()
 console.log('app', app) // I am global data
-
+const index_service = require("./index_service.js")
+console.log("index_service", index_service)
 Page({
   data: {
     motto: 'Hello World',
@@ -31,6 +32,8 @@ Page({
     }
   },
   onLoad: function () {
+    // index_service.getLocation()
+    // index_service.scanCode()
     console.log('app.globalData.userInfo', app.globalData.userInfo)
     console.log('this.data.canIUse', this.data.canIUse)
     if (app.globalData.userInfo) {
@@ -58,7 +61,8 @@ Page({
           })
         }
       })
-    }
+    }    
+    
   },
   getUserInfo: function(e) {
     console.log(e)

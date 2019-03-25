@@ -1,0 +1,17 @@
+<!--pages/View/wxs/wxsModel/wxsModel.wxml-->
+<wxs src="./demo.wxs" module="demo" />
+<view>{{demo.msg}}</view>
+<view>{{demo.bar(demo.FOO)}}</view>
+<wxs src="./demo_text.wxs" module="demo_text" />
+
+<wxs module="foo">
+  var some_msg = "hello world"; module.exports = { msg : some_msg, }
+</wxs>
+<view>{{foo.msg}}</view>
+
+<wxs src="./demo.wxs" module="demo" />
+
+<!-- 调用 demo 模块里面的 bar 函数，且参数为 demo 模块里面的 foo -->
+<view>{{demo.bar(demo.FOO)}}</view>
+<!-- 调用 some_comms 模块里面的 bar 函数，且参数为 page/index/index.js 里面的 msg -->
+<view>{{demo.bar(msg)}}</view>

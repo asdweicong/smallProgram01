@@ -1,0 +1,5 @@
+<!--pages/tab_wxs/tab_wxs.wxml-->
+<button  bindtap="yemianxuanran">页面渲染</button>
+<button  bindtap="shujuchuli">数据处理</button>
+<button  bindtap="wxsModel">WXS 模块</button>
+<button  bindtap="yunsuanfu">运算符</button>

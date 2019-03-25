@@ -1,7 +1,9 @@
 <!--pages/template/template.wxml 模板-->
-<template name="msgItem">
-  <view> <text> {{index}}: {{msg}} </text> <text> Time: {{time}} </text> </view>
-</template>
+
+<!-- 引用模板 -->
+<import src="msgItem.wxml"/>
+<include src="header.wxml"/>
+
 <template is="msgItem" data="{{...item}}" />
 
 <template name="odd">

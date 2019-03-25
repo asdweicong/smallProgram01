@@ -1,16 +1,22 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/tab/tab",
-    "pages/View/shujubangding/shujubangding",
-    "pages/View/liebiexuanran/liebiexuanran",
-    "pages/View/condition/condition",
-    "pages/View/template/template",
-    "pages/View/Event/Event",
-    "pages/View/importOrInclude/importOrInclude",
-    "pages/View/WXSS/WXSS",
-    "pages/View/WXS/WXS",
-    "pages/View/module/module"
+    "pages/tab_wxml/tab_wxml",
+    "pages/tab_wxs/tab_wxs",
+    "pages/View/wxml/shujubangding/shujubangding",
+    "pages/View/wxml/liebiexuanran/liebiexuanran",
+    "pages/View/wxml/condition/condition",
+    "pages/View/wxml/template/template",
+    "pages/View/wxml/Event/Event",
+    "pages/View/wxml/importOrInclude/importOrInclude",
+    "pages/View/wxml/WXSS/WXSS",
+    "pages/View/wxml/WXS/WXS",
+    "pages/View/wxml/module/module",
+    "pages/View/wxml/switch/switch",
+    "pages/View/wxs/yemianxuanran/yemianxuanran",
+    "pages/View/wxs/shujuchuli/shujuchuli",
+    "pages/View/wxs/wxsModel/wxsModel",
+    "pages/View/wxs/yunsuanfu/yunsuanfu"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -25,8 +31,12 @@
        "text":"用户"
      },
      {
-        "pagePath": "pages/tab/tab",
-        "text": "练习"
+        "pagePath": "pages/tab_wxml/tab_wxml",
+        "text": "wxml练习"
+      },
+     {
+        "pagePath": "pages/tab_wxs/tab_wxs",
+        "text": "wxs练习"
       }
    ]
  },
