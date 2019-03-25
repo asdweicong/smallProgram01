@@ -1,0 +1,12 @@
+<!--pages/shujubangding/shujubangding.wxml 数据绑定-->
+<view>简单绑定: {{ message }} </view>
+<view id="item-{{id}}"> 组件属性(需要在双引号之内):{{id}}</view>
+<view wx:if="{{condition}}">控制属性(需要在双引号之内):{{condition}} </view>
+<checkbox checked="{{true}}">关键字(需要在双引号之内)(特别注意：不要直接写 checked="false"，其计算结果是一个字符串，转成 boolean 类型后代表真值。): </checkbox>
+<view hidden="{{flag ? true : false}}">三元运算: Hidden </view>
+<view>算数运算: {{a + b}} + {{c}} + d </view>
+<view wx:if="{{length > 5}}">逻辑判断: </view>
+<view>字符串运算:{{"hello " + name}}</view>
+<view>数据路径运算:{{object.key}} {{array[0]}}</view>
+<span wx:for="{{[zero, 1, 2, 3, 4]}}"> {{item}} </span>
+<template is="objectCombine" data="{{for: a, bar: b}}">对象:</template>

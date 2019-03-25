@@ -1,0 +1,5 @@
+/* pages/importOrInclude/importOrInclude.wxss */
+@import "common.wxss";
+.middle-p {
+  padding:15px;
+}

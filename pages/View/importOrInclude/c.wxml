@@ -1,0 +1,4 @@
+<!-- C.wxml -->
+<import src="b.wxml" /> <template is="A" />
+<!-- Error! Can not use tempalte when not import A. -->
+<template is="B" />
